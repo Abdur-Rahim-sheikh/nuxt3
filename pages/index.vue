@@ -1,15 +1,10 @@
-<script setup>
-    definePageMeta({
-        middleware: 'auth',
-    })
+<script setup lang="ts">
+// ---cut-start---
+const useColor = () => useState<string>('color', () => 'pink')
+// ---cut-end---
+const color = useColor() // Same as useState('color')
 </script>
 
 <template>
-    <div class="main">
-        <h1>Index Page</h1>
-        <ContentDoc />
-        <!-- <img src="/2.jpeg" alt="kindle book" /> -->
-        <IconsBell />
-
-    </div>
+  <p>Current color: {{ color }}</p>
 </template>
