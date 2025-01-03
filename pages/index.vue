@@ -1,8 +1,6 @@
-<script>
-    // const sayHello = () => console.log('Hello from the index page')
-    // sayHello();
-    const {sayHello} = useUtils();
-    sayHello();
+<script setup>
+    const {$sayHello} = useNuxtApp()
+    $sayHello("abir plugins");
 </script>
 
 <template>
