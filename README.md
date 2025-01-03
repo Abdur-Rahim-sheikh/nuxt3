@@ -1,3 +1,13 @@
+## Basics of Nuxt
+1. assets vs public folder
+- assets folder is for files that need to be compiled and not served directly
+- public folder is for files that need to be served directly and available to end users by url/{{public_folder_file_name}}
+
+
+
+
+
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
