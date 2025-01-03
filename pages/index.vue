@@ -1,6 +1,7 @@
 <script setup>
-    const {$sayHello} = useNuxtApp()
-    $sayHello("abir plugins");
+    definePageMeta({
+        middleware: 'auth',
+    })
 </script>
 
 <template>
