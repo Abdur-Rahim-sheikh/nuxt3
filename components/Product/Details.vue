@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts" setup>
-const { product } = defineProps(['product']);
+defineProps(['product']);
 </script>
 
 <style>
