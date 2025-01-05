@@ -1,3 +1,10 @@
+## Lessons
+1. NuxtLink: We use this because
+    1. It helps to navigate between pages without refreshing the page which means it does not make a new request to the server. making it faster.
+    2. It helps to prefetch the page which means it loads the page in the background so that when the user clicks on the link the page is already loaded.
+    3. It helps to add the active class to the link when the page is active.
+
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
