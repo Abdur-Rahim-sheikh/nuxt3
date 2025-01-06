@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 const { id } = useRoute().params;
 const uri = `https://fakestoreapi.com/products/${id}`;
 // fetch product details

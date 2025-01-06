@@ -2,7 +2,8 @@
     <div class="card">
         <div class="grid grid-cols-2 gap-10">
             <div class="p-7">
-                <img :src="product.image" alt="product image" class="mx-auto my-7">
+                <img :src="product.image" alt="product image" class="mx-auto my-7" @click="openLightbox">
+                <Lightbox v-model:show="showLightbox" :src="product.image" type="image" />
             </div>
             <div class="p-7">
                 <h2 class="text-4xl my-7">{{ product.title }}</h2>
@@ -20,8 +21,15 @@
     </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
+import { ref } from 'vue';
 defineProps(['product']);
+const showLightbox = ref(false);
+
+function openLightbox() {
+    showLightbox.value = true;
+}
+
 </script>
 
 <style>
