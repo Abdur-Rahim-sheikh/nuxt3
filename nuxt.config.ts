@@ -12,6 +12,14 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }]
     }
   },
+  runtimeConfig:{
+    // this will be private and not exposed to the client
+    currencyKey: process.env.CURRENCY_API_KEY,
+    // to have some public runtime config
+    // public: {
+    //   api_key: ...
+    // }
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true }
 })
